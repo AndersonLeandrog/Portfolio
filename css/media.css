@@ -1,0 +1,170 @@
+@media (min-width: 420px) {
+
+    #habilidades .sys-bar {
+        width: 65%;
+    } 
+}
+
+@media (min-width: 520px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    #sobre .box-descricao p {
+        width: 98%;
+    }
+
+    #habilidades .sys-bar {
+        width: 56%;
+    }
+
+        .box-hab > ul {
+            width: 60%;
+        }
+
+    #formacao .descricao {
+        width: 80%;
+    }
+}
+
+@media (min-width: 620px) {
+    
+    #habilidades .sys-bar {
+        width: 50%;
+    }
+
+        .box {
+            justify-content: center;
+        }
+
+        .box-hab > ul {
+            width: 50%;
+        }
+
+
+    #formacao . {
+        width: 70%;
+    }
+
+    #projetos {
+        height: 920px;
+    }
+
+        #projetos .box .box-proj {
+            width: 65%;
+            height: 285px;
+
+            flex-direction: row;
+            justify-content: space-around;
+        }
+}
+
+@media (min-width: 720px) {
+
+    #habilidades .sys-bar {
+        width: 45%;
+    }
+
+        .box-hab > ul {
+            width: 40%;
+        }
+}
+
+@media (min-width: 820px) {
+
+    #habilidades .sys-bar {
+        width: 40%;
+    }
+
+    #formacao .descricao {
+        width: 60%;
+    }
+
+    #projetos {
+        height: 620px;
+    }
+
+        #projetos .box {
+            flex-direction: row;
+        }
+
+        #projetos .box .box-proj {
+            width: 50%;
+            height: 285px;
+
+            flex-direction: row;
+            justify-content: space-around;
+        }
+}
+
+@media (min-width: 920px) {
+
+    #habilidades .sys-bar {
+        width: 36%;
+    }
+
+        .box-hab > ul {
+            width: 35%;
+        }
+}
+
+@media (min-width: 1024px) {
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    #sobre {
+        height: 780px;
+    }
+
+        #sobre .descricao p {
+            width: 50%;
+        }
+
+    #habilidades {
+        height: 620px;
+    }
+
+    #habilidades .sys-bar {
+        width: 32%;
+    }
+
+        .box-hab {
+            width: 100%;
+            height: 320px;
+
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+            .box-hab > ul {
+                width: 250px;
+                height: 300px;
+            }
+
+
+    #formacao{
+        height: 500px;
+    }
+
+        #formacao .descricao{
+            width: 50%;
+        }
+
+    #projetos{
+        height: 625px;
+        justify-content: space-around;
+    }
+
+    #contato{
+        height: 620px;
+        justify-content: space-around;
+    }
+
+    #contato .box {
+        height: 350px;
+        flex-direction: row;
+    }
+}
