@@ -1,36 +1,30 @@
-//teste de commit
-//teste 1 de commit
-const icones = document.querySelectorAll("img")
+var script = document.createElement('script')
+script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'
+script.type = 'text/javascript'
+document.getElementsByTagName('head')[0].appendChild(script)
 
-function load() {    
+window.addEventListener('load', () => {
 
-    //Imagem de proejetos
-    const projeto = document.querySelectorAll(".projeto");
-    for(let i = 0; i < projeto.length; i++) {
-        
-        projeto[i].style.backgroundRepeat='no-repeat'
-
-        switch(i) {
-            case 0:
-                projeto[i].style.backgroundImage="url(img/droid.png)"
-                break;
-
-            case 1:
-                projeto[i].style.backgroundImage="url(img/pomo.png)"
-                break;
-
-            case 2:
-                projeto[i].style.backgroundImage="url(img/react.png)"
-                break;
-
-            case 3:
-                projeto[i].style.backgroundImage="url(img/patting.png)"
-                break;
-
-            default:
-                alert('Não foi possível encontrar as imagens de projetos.')
+    //Menu
+    let click = 0
+    const t = 180
+    $("#menu").click(() => {
+        click++
+        if(click === 1) {
+            $('nav').fadeIn(t)
+            $('#menu img').attr('src', 'img/voltar.png')
+        } else {
+            click = 0
+            $('nav').fadeOut(t)
+            $('#menu img').attr('src', 'img/menu.png')
         }
-    }
+    })
+
+    $(window).resize(() => {
+        window.innerWidth >= 1024? $('nav').show() : null
+    })
+
+    const icones = document.querySelectorAll("img")
 
     //scroll da Página
     const menuItems = document.querySelectorAll('.menu a[href^="#"]')
@@ -55,6 +49,4 @@ function load() {
     menuItems.forEach(item => {
         item.addEventListener('click', scrollToIdOnClick)
     })
-}
-
-window.addEventListener("load", load)
+}) 
