@@ -278,10 +278,14 @@ body {
                     cursor: pointer;
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;
-                    background: black;
+                    background: #111;
 
                     box-sizing: border-box;
                     padding: 5px;
+                }
+
+                .box-proj p:hover {
+                    background: #000;
                 }
 
 
