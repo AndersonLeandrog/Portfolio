@@ -285,7 +285,7 @@ body {
                 }
 
                 .box-proj p:hover {
-                    background: #000;
+                    background: #5049d7;
                 }
 
 
@@ -352,6 +352,7 @@ body {
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
+                    box-sizing: border-box;
                     background: rgb(27, 27, 27);
 
                     display: flex;
@@ -367,5 +368,5 @@ body {
 
                 @keyframes border {
                     from {background: rgb(27, 27, 27)}
-                    to {background: #000}
+                    to {background: #5049d7; border: 1px solid #fff}
                 }
