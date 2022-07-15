@@ -44,8 +44,16 @@
             justify-content: space-between;
         }
 
-        ul img {
+        ul .box-dark:hover {
+            background: transparent;
+        }
+
+        ul img, ul .darkTitle {
             display: none;
+        }
+
+        ul .darkImg {
+            display: flex;
         }
   
     header {
